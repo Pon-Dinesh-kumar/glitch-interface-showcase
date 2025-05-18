@@ -100,7 +100,7 @@ const Index = () => {
       {loading ? (
         <LoadingScreen onComplete={() => setLoading(false)} />
       ) : (
-        <div className="min-h-screen bg-cyber-dark cyber-grid relative overflow-x-hidden">
+        <div className="min-h-screen bg-cyber-dark cyber-grid relative">
           <div className="container mx-auto py-8 px-4">
             {/* Header */}
             <header className="mb-8">
