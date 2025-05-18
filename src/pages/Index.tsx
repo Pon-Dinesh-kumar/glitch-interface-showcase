@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { LoadingScreen } from '@/components/LoadingScreen';
-import { CharacterModel } from '@/components/CharacterModel';
+import { ProfilePhoto } from '@/components/ProfilePhoto';
 import { Panel } from '@/components/cyber-ui/Panel';
 import { SkillsSection } from '@/components/SkillsSection';
 import { ProjectCard } from '@/components/cyber-ui/ProjectCard';
@@ -132,8 +132,8 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Left Column */}
               <div className="md:col-span-1 space-y-6">
-                <Panel title="CHARACTER" className="h-80 mb-6">
-                  <CharacterModel />
+                <Panel title="PROFILE" className="h-80 mb-6">
+                  <ProfilePhoto imageUrl="/profile-photo.jpg" fallbackText="JD" />
                 </Panel>
                 
                 <CharacterStats />
